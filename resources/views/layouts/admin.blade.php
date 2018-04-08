@@ -97,20 +97,20 @@
                             <!-- kategorie administrator -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-dashboard fa-fw"></i>Główna</a>
+                            <a href="{{ route('home') }}"><i class="fa fa-dashboard fa-fw"></i>Główna</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Wystaw Aukcje</a>
+                            <a href="{{ route('wystaw') }}"><i class="fa fa-bar-chart-o fa-fw"></i> Wystaw Aukcje</a>
                           
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-table fa-fw"></i> Zarządzaj kontami</a>
+                            <a href="{{ route('konta') }}"><i class="fa fa-table fa-fw"></i> Zarządzaj kontami</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-edit fa-fw"></i> Zamów produkty</a>
+                            <a href="{{ route('produkty') }}"><i class="fa fa-edit fa-fw"></i> Zamów produkty</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-edit fa-fw"></i> Moja sprzedaż</a>
+                            <a href="{{ route('sprzedaz') }}"><i class="fa fa-edit fa-fw"></i> Moja sprzedaż</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Archiwa aukcji<span class="fa arrow"></span></a>

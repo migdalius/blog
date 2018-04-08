@@ -8,6 +8,6 @@
                         </div>
                     @endif
 
-                   Witamy w pakowalnie.pl
+                   sprzedaż nie wiem co to za dział ma być?
                
 @endsection

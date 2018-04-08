@@ -19,4 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/wystaw', 'WystawController@wystaw')->name('wystaw');
+Route::get('/wystaw', 'WystawController@index')->name('wystaw');
+
+Route::get('/konta', 'KontaController@index')->name('konta');
+
+Route::get('/produkty', 'ProduktyController@index')->name('produkty');
+
+Route::get('/sprzedaz', 'SprzedazController@index')->name('sprzedaz');

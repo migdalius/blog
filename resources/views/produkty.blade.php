@@ -8,6 +8,6 @@
                         </div>
                     @endif
 
-                   tutaj będzie wystawianie aukcjie
+                   tutaj będą konta użytkowników
                
 @endsection
