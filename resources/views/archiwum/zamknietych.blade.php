@@ -8,6 +8,6 @@
                         </div>
                     @endif
 
-                   tutaj będą konta użytkowników
+                 archiwum zamkniętych
                
 @endsection

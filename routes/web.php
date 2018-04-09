@@ -26,3 +26,7 @@ Route::get('/konta', 'KontaController@index')->name('konta');
 Route::get('/produkty', 'ProduktyController@index')->name('produkty');
 
 Route::get('/sprzedaz', 'SprzedazController@index')->name('sprzedaz');
+
+Route::get('/wystawionych', 'WystawionychController@index')->name('wystawionych');
+
+Route::get('/zamknietych', 'ZamknietychController@index')->name('zamknietych');

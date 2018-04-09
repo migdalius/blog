@@ -110,16 +110,16 @@
                             <a href="{{ route('produkty') }}"><i class="fa fa-edit fa-fw"></i> Zamów produkty</a>
                         </li>
                         <li>
-                            <a href="{{ route('sprzedaz') }}"><i class="fa fa-edit fa-fw"></i> Moja sprzedaż</a>
+                            <a href="{{ route('sprzedaz') }}"><i class="fa fa-buysellads"></i> Moja sprzedaż</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Archiwa aukcji<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Zamkniętych</a>
+                                    <a href="{{ route ('zamknietych') }}">Zamkniętych</a>
                                 </li>
                                 <li>
-                                    <a href="#">Wystawionych</a>
+                                    <a href="{{ route('wystawionych') }}">Wystawionych</a>
                                 </li>
                                 
                             </ul>
@@ -140,7 +140,7 @@
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                @yield('content')
                 </div>
             </div>
