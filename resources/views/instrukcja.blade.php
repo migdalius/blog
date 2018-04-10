@@ -1,4 +1,6 @@
-@extends('layouts.admin')
+@extends('layouts.adminapp')
+
+@section('title', 'Instrukcja Webapi')
 
 @section('content')
 

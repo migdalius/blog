@@ -1,4 +1,6 @@
-@extends('layouts.admin')
+@extends('layouts.adminapp')
+
+@section('title', 'Wystaw aukcje')
 
 @section('content')
 

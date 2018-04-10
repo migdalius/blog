@@ -1,4 +1,6 @@
-@extends('layouts.admin')
+@extends('layouts.adminapp')
+
+@section('title', 'Zarządzaj kontami')
 
 @section('content')
 
@@ -20,7 +22,7 @@
                 <input type="text" class="form-control" id="haslo" placeholder="" value="" required>
               </div>
               <div class="col-md-4 mb-3">
-                <label for="webapi">Webapi <a href="{{ route('instrukcja') }}"><i class="fa fa-question-circle"></i></label>
+                <label for="webapi">Webapi <a href="{{ route('instrukcja') }}"><i class="fa fa-question-circle"></i></a></label>
                 <input type="text" class="form-control" id="webapi" placeholder="" value="" required>
               </div>
             </div>
