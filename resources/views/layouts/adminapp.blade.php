@@ -90,8 +90,10 @@
           </div>
            @yield('content')
         </main>
+        
       </div>
     </div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -109,5 +111,6 @@
 
     <!-- Graphs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
   </body>
 </html>

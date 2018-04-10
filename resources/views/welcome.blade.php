@@ -1,87 +1,59 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.strona')
 
-        <title>Pakowalnie.pl</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Logowanie</a>
-                        <a href="{{ url('/register') }}">Rejestracja</a>
-                    @endif
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Pakowalnie.pl
-                </div>
-            </div>
+@section('content')
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+         <h1 class="display-4">Warunki współpracy</h1>
+          <p class="lead">Jeżeli spełniaż poniższe kryteria zapraszamy do kontaktu chętnie wprowadzimy do oferty Państwa produkty.</p>
+      </div>
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Producent</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>1.coś tam</li>
+              <li>2.coś tam</li>
+              <li>3.coś tam</li>
+              <li>4.coś tam</li>
+              <li>5.coś tam</li>
+              <li>6.coś tam</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary">Szczegóły</button>
+          </div>
         </div>
-    </body>
-</html>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Hurtownia</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>1.coś tam</li>
+              <li>2.coś tam</li>
+              <li>3.coś tam</li>
+              <li>4.coś tam</li>
+              <li>5.coś tam</li>
+              <li>6.coś tam</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary">Szczegóły</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Sklepy</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>1.coś tam</li>
+              <li>2.coś tam</li>
+              <li>3.coś tam</li>
+              <li>4.coś tam</li>
+              <li>5.coś tam</li>
+              <li>6.coś tam</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary">Szczegóły</button>
+          </div>
+        </div>
+      </div>
+               
+@endsection

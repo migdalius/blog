@@ -1,6 +1,6 @@
 @extends('layouts.adminapp')
 
-@section('title', 'Home')
+@section('title', 'Zamknięte aukcje')
 
 @section('content')
 
