@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="{{ asset('favicon.ico') }}">
-    <title>Pricing example for Bootstrap</title>
+    <title>Pakowalnie.pl - zintegrowany system obsługi allegro</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('dist/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -17,9 +17,9 @@
   </head>
 
   <body>
-
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-      <h5 class="my-0 mr-md-auto font-weight-normal">Pakowalnie.pl</h5>
+    <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+      <img class="my-0 mr-md-auto" src="{{ asset ('logo.png')}}" alt="" width="60" height="60">
+      <!-- <h5 class="my-0 mr-md-auto font-weight-normal">Pakowalnie.pl</h5> -->
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="#">Producenci</a>
         <a class="p-2 text-dark" href="#">Hurtownie</a>
@@ -27,19 +27,22 @@
         <a class="p-2 text-dark" href="#">Współpraca</a>
       </nav>
       <a class="btn btn-outline-primary" href="{{ url('/login') }}">Zaloguj</a>
-    </div>
+    </nav>
 
    
 
-    <div class="container">
-
+    <div class="container" >
+      <!-- jak zamienić br na prawidłowy tekst -->
+      <br>
+      <br>
+      <!-- jak zamienić br na prawidłowy tekst -->
       @yield('content')
       
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
           <div class="col-12 col-md">
-            <img class="mb-2" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-            <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+            <img class="mb-2" src="{{ asset ('logo.png')}}" alt="" width="24" height="24">
+            <small class="d-block mb-3 text-muted">&copy; 2015-2018 - pakowalnie.pl</small>
           </div>
           <div class="col-6 col-md">
             <h5>Features</h5>
@@ -73,6 +76,7 @@
         </div>
       </footer>
     </div>
+
 
 
     <!-- Bootstrap core JavaScript

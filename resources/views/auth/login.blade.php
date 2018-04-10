@@ -25,11 +25,11 @@
     <form class="form-signin" method="POST" action="{{ route('login') }}">
         {{ csrf_field() }}
 
-      <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <img class="mb-4" src="{{ asset ('logo.png')}}" alt="" width="72" height="72">
+    <!--  <h1 class="h3 mb-3 font-weight-normal">Proszę zaloguj się</h1> -->
 
       <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-      <label for="email" class="sr-only">Email address</label>
+      <label for="email" class="sr-only">Adres email</label>
       
       <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
       @if ($errors->has('email'))
@@ -40,7 +40,7 @@
       </div>
 
       <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-      <label for="password" class="sr-only">Password</label>
+      <label for="password" class="sr-only">Hasło</label>
       
       <input id="password" type="password" class="form-control" name="password" required>
       @if ($errors->has('password'))
@@ -53,13 +53,13 @@
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> 
-          Remember Me
+          Zapamiętaj mnie
 
         </label>
       </div>
 
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Zaloguj się</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2015-2018 - Pakowalnie.pl</p>
     </form>
 
 
