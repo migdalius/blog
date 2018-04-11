@@ -1,11 +1,11 @@
 
 <!doctype html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Pakowalnie.pl">
     <link rel="icon" href="{{ asset('favicon.ico') }}">
     <title>Pakowalnie.pl - zintegrowany system obsługi allegro</title>
 
@@ -21,10 +21,10 @@
       <img class="my-0 mr-md-auto" src="{{ asset ('logo.png')}}" alt="" width="60" height="60">
       <!-- <h5 class="my-0 mr-md-auto font-weight-normal">Pakowalnie.pl</h5> -->
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Producenci</a>
-        <a class="p-2 text-dark" href="#">Hurtownie</a>
-        <a class="p-2 text-dark" href="#">Sklepy</a>
-        <a class="p-2 text-dark" href="#">Współpraca</a>
+        <a class="p-2 text-dark" href="{{ route ('producenci')}}">Producenci</a>
+        <a class="p-2 text-dark" href="{{ route ('hurtownie')}}">Hurtownie</a>
+        <a class="p-2 text-dark" href="{{ route ('sklepy')}}">Sklepy</a>
+        <a class="p-2 text-dark" href="{{ route ('kontakt')}}">Kontakt</a>
       </nav>
       <a class="btn btn-outline-primary" href="{{ url('/login') }}">Zaloguj</a>
     </nav>
@@ -44,39 +44,42 @@
             <img class="mb-2" src="{{ asset ('logo.png')}}" alt="" width="24" height="24">
             <small class="d-block mb-3 text-muted">&copy; 2015-2018 - pakowalnie.pl</small>
           </div>
+          <!--
           <div class="col-6 col-md">
-            <h5>Features</h5>
+            <h5>Kategoria1</h5>
             <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Cool stuff</a></li>
-              <li><a class="text-muted" href="#">Random feature</a></li>
-              <li><a class="text-muted" href="#">Team feature</a></li>
-              <li><a class="text-muted" href="#">Stuff for developers</a></li>
-              <li><a class="text-muted" href="#">Another one</a></li>
-              <li><a class="text-muted" href="#">Last time</a></li>
+              <li><a class="text-muted" href="#">1</a></li>
+              <li><a class="text-muted" href="#">2</a></li>
+              <li><a class="text-muted" href="#">3</a></li>
+              <li><a class="text-muted" href="#">4</a></li>
+              <li><a class="text-muted" href="#">5</a></li>
+              <li><a class="text-muted" href="#">6</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md">
+            <h5>Kategoria2</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">1</a></li>
+              <li><a class="text-muted" href="#">2</a></li>
+              <li><a class="text-muted" href="#">3</a></li>
+              <li><a class="text-muted" href="#">4</a></li>
             </ul>
           </div>
           <div class="col-6 col-md">
-            <h5>Resources</h5>
+            <h5>Kategoria3</h5>
             <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Resource</a></li>
-              <li><a class="text-muted" href="#">Resource name</a></li>
-              <li><a class="text-muted" href="#">Another resource</a></li>
-              <li><a class="text-muted" href="#">Final resource</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Team</a></li>
-              <li><a class="text-muted" href="#">Locations</a></li>
-              <li><a class="text-muted" href="#">Privacy</a></li>
-              <li><a class="text-muted" href="#">Terms</a></li>
+              <li><a class="text-muted" href="#">1</a></li>
+              <li><a class="text-muted" href="#">2</a></li>
+              <li><a class="text-muted" href="#">3</a></li>
+              <li><a class="text-muted" href="#">4</a></li>
             </ul>
           </div>
         </div>
       </footer>
     </div>
 
+    -->
 
 
     <!-- Bootstrap core JavaScript

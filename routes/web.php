@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -32,3 +33,13 @@ Route::get('/wystawionych', 'WystawionychController@index')->name('wystawionych'
 Route::get('/zamknietych', 'ZamknietychController@index')->name('zamknietych');
 
 Route::get('/instrukcja', 'InstrukcjaController@index')->name('instrukcja');
+
+Route::get('/kontakt', 'KontaktController@index')->name('kontakt');
+
+Route::get('/producenci', 'ProducenciController@index')->name('producenci');
+
+Route::get('/hurtownie', 'HurtownieController@index')->name('hurtownie');
+
+Route::get('/sklepy', 'SklepyController@index')->name('sklepy');
+
+
