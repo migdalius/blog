@@ -52,7 +52,7 @@
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Obsługa klienta <span class="text-primary">telefoniczna i email</span></h2>
+            <h2 class="featurette-heading">Obsługa klienta <span class="text-secondary">telefoniczna i email</span></h2>
             <p class="lead">64% email do sprzedawcy jest z pytaniem czy towar/przesyłka została wysłana, w naszym systemie takie wiadomości nawet nie trafiają do systemu ponieważ klient otrzymuje w ciągu 4 sec odpowiedź z linkiem do śledzenie przesyłki i dokładnymi danymi w jakim dniu została wysłana i kiedy dotrze. Klient końcowy nawet nie ma świadomości ,że na większość pytań otrzymał odpowiedź wysłaną przez nasz program.</p>
             <p class="lead">Dokładnie to samo tyczy się rozmów telefonicznych niestety obecnie technologia nie pozwala na prowadzenie pełnych rozmów z klientem, natomiast oferujemy obsługę telefoniczą w pełnym zakresie i w wybranych godzinach przez klienta może to być 24h dziennie lub 1h dziennie w wyznaczonych godzinach, nr. telefonu stacjonarny lub komórkowy, obsługa telefoniczna jest zaautomatyzowana gdy klient dzwoni z telefonu który jest w ustawieniach konta allegro operatorowi od razu pojawią się wszystkie informacje o kliencie, zakupionych produktach, emaile które przesłał.
             </p>

@@ -24,7 +24,6 @@
         <a class="p-2 text-dark" href="{{ route ('producenci')}}">Producenci</a>
         <a class="p-2 text-dark" href="{{ route ('hurtownie')}}">Hurtownie</a>
         <a class="p-2 text-dark" href="{{ route ('sklepy')}}">Sklepy</a>
-         <a class="p-2 text-dark" href="#">Chce sprzedawać</a>
         <a class="p-2 text-dark" href="{{ route ('kontakt')}}">Kontakt</a>
       </nav>
       <a class="btn btn-outline-primary" href="{{ url('/login') }}">Zaloguj</a>
