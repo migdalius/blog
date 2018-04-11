@@ -41,12 +41,42 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Ceny/stany magazynowe <span class="text-success">Pełna automatyzacja</span></h2>
+            <p class="lead">Automatyczne zamykanie aukcji jeżeli brak danego produktu u dostawcy (domyślnie co 1h) jednak można to zmieniać, aktualizacja cen produktów jeżeli dostawca zmieni cenę produktu jest ona przeliczna na marże którą ustawiłeś dla danego dostawcy lub kategorii i aukcja allegro zostaje zaktualizowana (domyślnie co 1h) nie musisz się już martwić różnicami w cenie lub na stanie magazynowym.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="{{asset ('img/stan_magazynowy.jpg')}}" alt="Generic placeholder image">
           </div>
         </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Obsługa klienta <span class="text-primary">telefoniczna i email</span></h2>
+            <p class="lead">64% email do sprzedawcy jest z pytaniem czy towar/przesyłka została wysłana, w naszym systemie takie wiadomości nawet nie trafiają do systemu ponieważ klient otrzymuje w ciągu 4 sec odpowiedź z linkiem do śledzenie przesyłki i dokładnymi danymi w jakim dniu została wysłana i kiedy dotrze. Klient końcowy nawet nie ma świadomości ,że na większość pytań otrzymał odpowiedź wysłaną przez nasz program.</p>
+            <p class="lead">Dokładnie to samo tyczy się rozmów telefonicznych niestety obecnie technologia nie pozwala na prowadzenie pełnych rozmów z klientem, natomiast oferujemy obsługę telefoniczą w pełnym zakresie i w wybranych godzinach przez klienta może to być 24h dziennie lub 1h dziennie w wyznaczonych godzinach, nr. telefonu stacjonarny lub komórkowy, obsługa telefoniczna jest zaautomatyzowana gdy klient dzwoni z telefonu który jest w ustawieniach konta allegro operatorowi od razu pojawią się wszystkie informacje o kliencie, zakupionych produktach, emaile które przesłał.
+            </p>
+            <p class="lead">Obsługa sms na życznie można wysyłać oferty reklamowe/kupony na numery klientów jeżeli wyrażą na to zgodę, można również informować o etapach dostawy lub odpowiadać bezpośrednio na pytania zadane z innych źródeł jak email lub telefon</p>
+
+            <p class="lead">Faktury są generowane automatycznie do każdego zamówienia mogą również być generowane tylko na życzenie tak jak rachunki lub faktury pro forma</p>
+            
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="{{asset ('img/obsluga.png')}}" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Pakowanie twoich <span class="text-info">Przesyłek</span></h2>
+            <p class="lead">Zakupiony przez twoich klientów towar możemy przesłać do ciebie bez względu na to z ilu hurtowni pochodzą produkty lub spakować go w jednej z naszych pakowalni.</p>
+            <p class="lead">Obecnie mamy 2 typy pakowalni: standardową która pakuje przesyłki w magazynie i wersje mobilną która posiada całe wyposażenie w kontenerze 3x3 metry, samochód posiada pełne wyposażenie potrzebne do pakowania przesyłek i obsługi naszej platformy, wersja mobilna jest w stanie pakować przesyłki i wysyłać w ciągu 6h (obecnie tylko w Warszawie) standardowa wykonuje to w ciągu 1-2 dni roboczych.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="{{asset ('img/kurier.png')}}" alt="Generic placeholder image">
+          </div>
+        </div>
+        
                
 @endsection
