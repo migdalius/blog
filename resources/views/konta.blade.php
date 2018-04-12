@@ -22,12 +22,11 @@
                 <input type="text" class="form-control" id="haslo" placeholder="" value="" required>
               </div>
               <div class="col-md-4 mb-3">
-                <label for="webapi">Webapi <a href="{{ route('instrukcja') }}"><i class="fa fa-question-circle"></i></a></label>
+                <label for="webapi">Webapi <a href="{{ route('instrukcja') }}">?</a></label>
                 <input type="text" class="form-control" id="webapi" placeholder="" value="" required>
               </div>
             </div>
             <hr class="mb-4">
-            
 			<div class="col-md-3 mb-3">
             	<button class="btn btn-primary btn-lg btn-block" type="submit">Dodaj</button>
              </div>
@@ -39,22 +38,84 @@
           			<h4 class="mb-3">2. Moje konta allegro</h4>
           		</div>
           <div class="row">
-             <div class="form-group">
-             	 <div class="col-md-6 order-md-1">
-    			<label for="exampleFormControlSelect1"></label>
-    				<select class="form-control" id="exampleFormControlSelect1">
-      				<option>Konto_allegro_1</option>
-     				<option>Konto_allegro_2</option>
-      				<option>Konto_allegro_3</option>
-      				<option>Konto_allegro_4</option>
-      				<option>Konto_allegro_5</option>
-      				<option>Konto_allegro_6</option>
-      				<option>Konto_allegro_7</option>
-      				<option>Konto_allegro_8</option>
-      				<option>Konto_allegro_9</option>
-    			</select>
-    		</div>
-  			</div>
+            <div class="col-md-10 order-md-1">
+             <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Login</th>
+      <th scope="col">Data dodania</th>
+      <th scope="col">Spółka</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>test</td>
+      <td>test</td>
+      <td>@test</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>test</td>
+      <td>test</td>
+      <td>@test</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>test</td>
+      <td>test test</td>
+      <td>test</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>test</td>
+      <td>test test</td>
+      <td>test</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>test</td>
+      <td>test test</td>
+      <td>test</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>test</td>
+      <td>test test</td>
+      <td>test</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>test</td>
+      <td>test test</td>
+      <td>test</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>test</td>
+      <td>test test</td>
+      <td>test</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>test</td>
+      <td>test test</td>
+      <td>test</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>test</td>
+      <td>test test</td>
+      <td>test</td>
+    </tr>
+  </tbody>
+</table>
+</div>
           </div>
+
+          <br>
+          <br>
+          <br>
                
 @endsection
