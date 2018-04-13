@@ -1,4 +1,9 @@
 @extends('layouts.adminapp')
+@section ('table')
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="{{ asset('tabela/jquery.tabledit.js') }}"></script>
+ @endsection
 
 @section('title', 'Wystaw aukcje')
 
@@ -202,18 +207,6 @@
 
 
 </div>    
-
-
-
-
-
-
-
-
-
-
-
-
 
                
 @endsection

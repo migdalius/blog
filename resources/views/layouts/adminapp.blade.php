@@ -12,13 +12,11 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('dist/css/bootstrap.min.css') }}" rel="stylesheet">
-
+    
     <!-- Custom styles for this template -->
     <link href="{{ asset('dashboard.css') }}" rel="stylesheet">
-
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="{{ asset('tabela/jquery.tabledit.js') }}"></script>
+    @yield('table')
+    
 
   </head>
 
@@ -73,7 +71,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('wystawionych') }}">
+                <a class="nav-link" href="{{ route('szachownica') }}">
                   <span data-feather="user"></span>
                   Szachownica
                 </a>
@@ -113,6 +111,7 @@
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
     <script>window.jQuery || document.write('<script src="{{ asset('assets/js/vendor/jquery-slim.min.js') }}"><\/script>')</script>
     <script src="{{ asset('assets/js/vendor/popper.min.js') }}"></script>
     <script src="{{ asset('dist/js/bootstrap.min.js') }}"></script>
