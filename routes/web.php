@@ -42,4 +42,7 @@ Route::get('/hurtownie', 'HurtownieController@index')->name('hurtownie');
 
 Route::get('/sklepy', 'SklepyController@index')->name('sklepy');
 
+Route::get('/szachownica', 'SzachownicaController@index')->name('szachownica');
+
+
 

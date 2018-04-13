@@ -73,6 +73,12 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="{{ route('wystawionych') }}">
+                  <span data-feather="user"></span>
+                  Szachownica
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="{{ route ('zamknietych') }}">
                   <span data-feather="layers"></span>
                   Archiwa (zamknięte)
