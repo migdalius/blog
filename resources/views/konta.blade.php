@@ -11,8 +11,12 @@
   <!-- dodaj button przekierowania do sciezki dodaj_konto.blade.php -->  
 
   <div class="col-md-8 order-md-1">
+    <div class="btn-group-vertical">
     <h4 class="mb-3">Moje konta allegro</h4>
+    <a href="{{route ('dodaj_konta')}}">Dodaj nowe konto Allegro</a>
   </div>
+  </div>
+  <br>
   <div class="row">
     <div class="col-md-10 order-md-1">
       <table class="table">
@@ -36,7 +40,11 @@
             @endforeach
           @else
             <tr>
-              <td> Nie ma dodanych kont</td>
+              <td>
+                <div class="alert alert-warning" role="alert">
+                  <strong>Uwaga! - </strong>Nie dodałeś żadnego konta allegro <a href= "{{route ('dodaj_konta')}}">(Dodaj konto)</a>
+                </div>
+              </td>
             </tr>
           @endif
 

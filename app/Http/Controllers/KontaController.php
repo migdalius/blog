@@ -24,7 +24,9 @@ class KontaController extends Controller
      */
     public function index()
     {
-        $konta = Konto::all();
+        $userId = \Auth::user()->id;
+        $konta = Konto::where('user_id',$userId)->get();
+
         return view('konta')->with('konta',$konta);
     }
 
