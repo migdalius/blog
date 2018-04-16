@@ -20,6 +20,16 @@ class RegisterController extends Controller
     |
     */
 
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        return view('uzytkownicy');
+    }
+
     use RegistersUsers;
 
     /**
@@ -36,8 +46,9 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('auth');
     }
+
 
     /**
      * Get a validator for an incoming registration request.

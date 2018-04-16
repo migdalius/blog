@@ -24,6 +24,7 @@
             <table class="table table-hover" id="bootstrap-table">
                 <thead>
                 <tr>
+                    <th></th>
                     <th>id</th>
                     <th>Username</th>
                     <th>First Name</th>
@@ -32,220 +33,18 @@
                 </thead>
                 <tbody>
                 <tr>
+                    <td></td>
                     <td>200</td>
                     <td>janedoe</td>
                     <td>Yane</td>
                     <td>Doe</td>
                 </tr>
                 <tr>
+                    <td></td>
                     <td>100</td>
                     <td>zanedoe</td>
                     <td>Jane</td>
                     <td>Moe</td>
-                </tr>
-                <tr>
-                    <td>300</td>
-                    <td>aanedoe</td>
-                    <td>Lane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>canedoe</td>
-                    <td>Jane</td>
-                    <td>Boe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>janedoe</td>
-                    <td>Jane</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>210</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>310</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>410</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>510</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>610</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>710</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>810</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>910</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>100</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>110</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>120</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>130</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>140</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>150</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>160</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>170</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>180</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
-                </tr>
-                <tr>
-                    <td>190</td>
-                    <td>johndoe</td>
-                    <td>John</td>
-                    <td>Doe</td>
                 </tr>
                 </tbody>
             </table>

@@ -77,6 +77,12 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="{{ route('uzytkownicy') }}">
+                  <span data-feather="user-plus"></span>
+                  Użytkownicy
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="{{ route ('zamknietych') }}">
                   <span data-feather="layers"></span>
                   Archiwa (zamknięte)

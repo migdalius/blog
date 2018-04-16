@@ -22,13 +22,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/wystaw', 'WystawController@index')->name('wystaw');
 
-// zakładka /konta //
+//1. zakładka /konta //
 Route::get('/konta', 'KontaController@index')->name('konta');
 
 Route::get('/konta/dodaj', 'KontaController@create')->name('dodaj_konta');
 
 Route::post('/konta', 'KontaController@store');
-
+//1. ##### //
 
 Route::get('/produkty', 'ProduktyController@index')->name('produkty');
 
@@ -49,6 +49,8 @@ Route::get('/hurtownie', 'HurtownieController@index')->name('hurtownie');
 Route::get('/sklepy', 'SklepyController@index')->name('sklepy');
 
 Route::get('/szachownica', 'SzachownicaController@index')->name('szachownica');
+
+Route::get('/uzytkownicy', 'Auth\RegisterController@index')->name('uzytkownicy');
 
 
 
