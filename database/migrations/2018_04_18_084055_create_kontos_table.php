@@ -14,8 +14,7 @@ class CreateKontosTable extends Migration
     public function up()
     {
         Schema::create('kontos', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('login');
+            $table->string('login')->primary();
             $table->string('password');
             $table->string('webapi');
             $table->integer('user_id');
@@ -33,3 +32,4 @@ class CreateKontosTable extends Migration
         Schema::dropIfExists('kontos');
     }
 }
+

@@ -1,19 +1,25 @@
 @extends('layouts.adminapp')
 
-@section('title', 'Zarządzaj kontami')
+@section('title', 'Moje konta Allegro')
 
 @section('content')
-  @if (session('status'))
-    <div class="alert alert-success">
-      {{ session('status') }}
-    </div>
+  
+  @if (session('message'))
+    @if( session('message') === 'Zalogowano poprawnie')
+      <div class="alert alert-success">
+        {{ session('message') }}
+      </div>
+    @else
+      <div class="alert alert-danger">
+        {{ session('message') }}
+      </div>
+    @endif
   @endif
-  <!-- dodaj button przekierowania do sciezki dodaj_konto.blade.php -->  
 
   <div class="col-md-8 order-md-1">
     <div class="btn-group-vertical">
-    <h4 class="mb-3">Moje konta allegro</h4>
-    <a href="{{route ('dodaj_konta')}}">Dodaj nowe konto Allegro</a>
+    <h4 class="mb-3"> <a href="{{route ('dodaj_konta')}}">Dodaj nowe konto Allegro</a> </h4>
+    
   </div>
   </div>
   <br>

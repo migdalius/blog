@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Konto;
+use App\Allegro\AllegroWebAPI;
 
 class KontaController extends Controller
 {
@@ -49,16 +50,26 @@ class KontaController extends Controller
 
         
         //próbuje się zalogować
+        define('ALLEGRO_LOGIN', request('login'));
+        define('ALLEGRO_PASSWORD', request('password'));
+        define('ALLEGRO_KEY', request('webapi'));
+
+        $allegro_web_api_instance = new AllegroWebAPI();
+        $message = $allegro_web_api_instance->LoginEnc();
+
         //Zapisuje do bazy danych
-        Konto::create([
+        echo $message;
+        if($message === 'Zalogowano poprawnie'){
+            Konto::create([
             'login' => request('login'),
             'password' => request('password'),
             'webapi' => request('webapi'),
             'user_id' => auth()->id()
-        ]);
+            ]); 
+        }
+       
         //Przekierowuje do ścieżki /konta
-
-        return redirect('/konta');
+        return redirect('/konta')->with('message', $message);
     }
 
 
