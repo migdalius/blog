@@ -17,6 +17,8 @@ class CreateKontosTable extends Migration
             $table->string('login')->primary();
             $table->string('password');
             $table->string('webapi');
+            $table->decimal('narzut',5,2);
+            $table->decimal('dodatek',5,2);
             $table->integer('user_id');
             $table->timestamps();
         });

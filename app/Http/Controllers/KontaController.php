@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Konto;
 use App\Allegro\AllegroWebAPI;
+use Illuminate\Database\QueryException;
 
 class KontaController extends Controller
 {
@@ -44,10 +45,6 @@ class KontaController extends Controller
 
      public function store()
     {
-
-        //dd(request("webapi"));
-        //Dodaje nowe konto allegro
-
         
         //próbuje się zalogować
         define('ALLEGRO_LOGIN', request('login'));
@@ -58,14 +55,24 @@ class KontaController extends Controller
         $message = $allegro_web_api_instance->LoginEnc();
 
         //Zapisuje do bazy danych
-        echo $message;
         if($message === 'Zalogowano poprawnie'){
-            Konto::create([
-            'login' => request('login'),
-            'password' => request('password'),
-            'webapi' => request('webapi'),
-            'user_id' => auth()->id()
-            ]); 
+            try{
+                Konto::create([
+                'login' => request('login'),
+                'password' => request('password'),
+                'webapi' => request('webapi'),
+                'narzut' =>request('narzut'),
+                'dodatek' =>request('dodatek'),
+                'user_id' => auth()->id()
+                ]); 
+            }
+            catch(QueryException $e){
+
+                $error_code = $e->errorInfo[1];
+                if($error_code == 1062){
+                    $message = "Konto ".ALLEGRO_LOGIN." zostało już wprowadzone";
+                }
+            }
         }
        
         //Przekierowuje do ścieżki /konta
