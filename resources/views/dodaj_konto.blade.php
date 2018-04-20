@@ -31,6 +31,17 @@
         </div>
       </div>
       
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="narzut">Narzut <a href="#">?</a></label>
+          <input type="number" step="0.01" class="form-control" id="narzut" name="narzut" placeholder="" value="" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="dodatek">Dodatek</label>
+          <input type="number" step="0.01" class="form-control" id="dodatek" name="dodatek" placeholder="" value="" required>
+        </div>
+      </div>
       <hr class="mb-4">
   		<div class="col-md-3 mb-3">
         <button class="btn btn-primary btn-lg btn-block" type="submit">Dodaj</button>

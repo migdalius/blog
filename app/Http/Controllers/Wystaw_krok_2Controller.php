@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Konto;
 
-class WystawController extends Controller
+class Wystaw_krok_2Controller extends Controller
 {
-   /**
+    /**
      * Create a new controller instance.
      *
      * @return void
@@ -22,14 +22,13 @@ class WystawController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
+
     public function index()
     {
         $userId = \Auth::user()->id;
         $konta = Konto::where('user_id',$userId)->get();
 
-        return view('wystaw')->with('konta',$konta);
+        return view('wystaw_krok_2')->with('konta',$konta);
     }
-
-
-
 }

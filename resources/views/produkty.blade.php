@@ -2,6 +2,7 @@
 
 @section('title', 'Zamów produkty')
 
+
 @section('content')
 
                     @if (session('status'))
@@ -10,6 +11,6 @@
                         </div>
                     @endif
 
-                   tutaj będą konta użytkowników
+                  
                
 @endsection

@@ -53,4 +53,12 @@ Route::get('/szachownica', 'SzachownicaController@index')->name('szachownica');
 Route::get('/uzytkownicy', 'Auth\RegisterController@index')->name('uzytkownicy');
 
 
+Route::get('/wystaw_krok_2', 'Wystaw_krok_2Controller@index')->name('wystaw_krok_2');
+
+Route::get('/wystaw_krok_3', 'Wystaw_krok_3Controller@index')->name('wystaw_krok_3');
+
+Route::get('/wystaw_krok_4', 'Wystaw_krok_4Controller@index')->name('wystaw_krok_4');
+
+
+
 
