@@ -15,11 +15,19 @@
   @endif
 
   <div class="col-md-12 order-md-1">
+<<<<<<< HEAD
     <h4 class="mb-3">1/4. Przygotuj się do wystania nowego dostawcy</h4>
       <div class="row">
         <div class="form-group">
           <div class="col-md-12 order-md-3">
             <div class="form-group">
+=======
+    <h4 class="mb-3">1. Przygotuj się do wystania nowego dostawcy</h4>
+      <div class="row">
+        <div class="form-group">
+          <div class="col-md-12 order-md-3">
+    			  <div class="form-group">
+>>>>>>> ed0808031e557034abe5776517cbb682cf443d8d
 
               <label for="exampleSelect1">Dostawca:</label>
               <select class="form-control" id="exampleSelect1">
@@ -30,8 +38,13 @@
               </select>
 
             </div>
+<<<<<<< HEAD
           </div>
         </div>
+=======
+    		  </div>
+  			</div>
+>>>>>>> ed0808031e557034abe5776517cbb682cf443d8d
       </div>
       
       <div class="container col-md-12"> 
@@ -99,12 +112,106 @@
         </table>
       </div>
       <hr class="mb-4">
+<<<<<<< HEAD
       <div class="float-right">
         <a class="btn btn-primary" href="{{route ('wystaw_krok_2')}}" role="button">Nastęny krok</a>
+=======
+
+      <div class="col-md-12 order-md-1">
+        <h4 class="mb-3">2. Zarządzaj ceną:</h4>
+        <div class="row">  
+          <!-- tu wstawić tabelę from kontos-->
+          <table class="table table-striped table-bordered" id="example2">
+            <thead>
+              <tr>
+                <th>Konto</th>
+                <th>Narzut</th>
+                <th>Dodatek</th>
+              </tr>
+            </thead>
+            <tbody>
+              @foreach($konta as $konto)
+                @if(\Auth::user()->id == $konto->user_id)
+                  <tr>
+                    <td>{{$konto->login}}</td>
+                    <td>{{$konto->narzut}}</td>
+                    <td>{{$konto->dodatek}}</td>
+                  </tr>
+                @endif
+              @endforeach
+            </tbody>
+          </table>
+          <!-- KONIEC TABELI -->
+        </div>
+        <hr class="mb-4">
+>>>>>>> ed0808031e557034abe5776517cbb682cf443d8d
       </div>
     </div>
 
 
+<<<<<<< HEAD
+=======
+    <div class="col-md-12 order-md-1">
+    <h4 class="mb-3">3.Wystaw aukcje allegro</h4>
+    <form class="needs-validation" novalidate>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <label for="exampleSelect1">Czas dostawy:</label>
+            <select class="form-control" id="exampleSelect1">
+              <option>Czasnabuty</option>
+              <option>Kesi</option>
+              <option>Kupbuty</option>
+              <option>Sporti</option>
+            </select>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label for="lastName">Dodatkowy opis:</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            Valid last name is required.
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label for="lastName">Dodatkowe tagi:</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            Valid last name is required.
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <label for="exampleSelect1">Dostawca</label>
+          <select class="form-control" id="exampleSelect1">
+            <option>Czasnabuty</option>
+            <option>Kesi</option>
+            <option>Kupbuty</option>
+            <option>Sporti</option>
+          </select>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="exampleSelect1">Wybierz konto allegro:</label>
+          <select class="form-control" id="exampleSelect1">
+            <option>Czasnabuty</option>
+            <option>Kesi</option>
+            <option>Kupbuty</option>
+            <option>Sporti</option>
+          </select>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <br>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Wystaw</button>
+        </div>
+      </div>
+    </div>    
+
+>>>>>>> ed0808031e557034abe5776517cbb682cf443d8d
                
 @endsection
 
