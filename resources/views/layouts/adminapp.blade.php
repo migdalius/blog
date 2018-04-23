@@ -9,7 +9,7 @@
     <link rel="icon" href="{{ asset('favicon.ico') }}">
 
     <title>Panel administracyjny | Pakowalnie.pl</title>
-
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('dist/css/bootstrap.min.css') }}" rel="stylesheet">
     
@@ -113,11 +113,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    @yield('tabela')
-
-
-   
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"> </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    @yield('tabela')   
 
     <script>window.jQuery || document.write('<script src="{{ asset('assets/js/vendor/jquery-slim.min.js') }}"><\/script>')</script>
     <script src="{{ asset('assets/js/vendor/popper.min.js') }}"></script>

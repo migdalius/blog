@@ -31,4 +31,15 @@ class Wystaw_krok_2Controller extends Controller
 
         return view('wystaw_krok_2')->with('konta',$konta);
     }
+
+    public function editKonto(Request $req) {
+        $data = Konto::find($req->id);
+        
+        $data->narzut = $req->narzut;
+        $data->dodatek = $req->dodatek;
+        
+        $data->save();
+
+        return Response()->json($data);
+    }
 }

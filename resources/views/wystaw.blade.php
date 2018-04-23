@@ -19,7 +19,7 @@
       <div class="row">
         <div class="form-group">
           <div class="col-md-12 order-md-3">
-    			  <div class="form-group">
+            <div class="form-group">
 
               <label for="exampleSelect1">Dostawca:</label>
               <select class="form-control" id="exampleSelect1">
@@ -30,8 +30,8 @@
               </select>
 
             </div>
-    		  </div>
-  			</div>
+          </div>
+        </div>
       </div>
       
       <div class="container col-md-12"> 
