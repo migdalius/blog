@@ -14,7 +14,7 @@
       {{csrf_field()}}
         <h4 class="mb-3">2/4. Ustaw narzut i dodatek do ceny końcowej</h4>
 
-        <div class="row">  
+        <div class="row col-sm-6">  
           <!-- tu wstawić tabelę from kontos-->
           <table class="table table-striped table-bordered" id="example2">
             <thead>
@@ -22,6 +22,7 @@
                 <th>Konto</th>
                 <th>Narzut</th>
                 <th>Dodatek</th>
+                <th>Edytuj</th>
               </tr>
             </thead>
             <tbody>
@@ -50,7 +51,7 @@
       <div>
         <a clas ="error"> </a>
       </div>
-      <div class="float-right">
+      <div class="float-center">
         <a class="btn btn-primary" href="{{route ('wystaw_krok_3')}}" role="button">Nastęny krok</a>
       </div>
     </div> 

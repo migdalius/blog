@@ -55,10 +55,10 @@ class KontaController extends Controller
         $message = $allegro_web_api_instance->LoginEnc();
 
         $try_login = Konto::all()->where('login', request('login'));
+
         //Zapisuje do bazy danych
         if($message === 'Zalogowano poprawnie'){
-<<<<<<< HEAD
-            if(!$try_login){
+            if(!$try_login->count()){
                 try{
                     Konto::create([
                     'login' => request('login'),
@@ -78,27 +78,8 @@ class KontaController extends Controller
                 }
             }
             else{
-                $message = "Konto ".ALLEGRO_LOGIN." zostało już wprowadzone";
+                $message = $try_login."Konto ".ALLEGRO_LOGIN." zostało już wprowadzone";
             }
-=======
-            try{
-                Konto::create([
-                'login' => request('login'),
-                'password' => request('password'),
-                'webapi' => request('webapi'),
-                'narzut' =>request('narzut'),
-                'dodatek' =>request('dodatek'),
-                'user_id' => auth()->id()
-                ]); 
-            }
-            catch(QueryException $e){
-
-                $error_code = $e->errorInfo[1];
-                if($error_code == 1062){
-                    $message = "Konto ".ALLEGRO_LOGIN." zostało już wprowadzone";
-                }
-            }
->>>>>>> ed0808031e557034abe5776517cbb682cf443d8d
         }
        
         //Przekierowuje do ścieżki /konta
