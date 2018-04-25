@@ -12,6 +12,8 @@
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    
     
     <!-- Custom styles for this template -->
     <link href="{{ asset('dashboard.css') }}" rel="stylesheet">
@@ -92,6 +94,18 @@
                 <a class="nav-link" href="{{ route('wystawionych') }}">
                   <span data-feather="layers"></span>
                   Archiwa (wystawione)
+                </a>
+              </li>
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Rozliczenia</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="{{route ('rachunki')}}">
+                  <span data-feather="file-text"></span>
+                  Rachunki
                 </a>
               </li>
             </ul>

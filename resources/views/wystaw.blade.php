@@ -119,14 +119,6 @@
                       [8, 'Tag7'], [9, 'Tag8'], [10, 'Tag9'], [11, 'Tag10']]
                   }
               });
-  $('#example2').Tabledit({
-          editButton: false,
-                  removeButton: false,
-                  columns: {
-                      identifier: [0, 'id'],
-                      editable: [[1, 'Konto'],[2, 'Marża'],[3, 'Dodatki']]
-                  }
-              });
         
   </script>
 @endsection

@@ -167,6 +167,7 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
+        //ConsoleTVs\Invoices\InvoicesServiceProvider::class,
 
         /*
          * Application Service Providers...

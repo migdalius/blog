@@ -61,6 +61,8 @@ Route::get('/wystaw_krok_3', 'Wystaw_krok_3Controller@index')->name('wystaw_krok
 
 Route::get('/wystaw_krok_4', 'Wystaw_krok_4Controller@index')->name('wystaw_krok_4');
 
+Route::get('/rachunki', 'RachunkiController@index')->name('rachunki');
+
 
 
 

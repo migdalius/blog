@@ -14,7 +14,7 @@
       {{csrf_field()}}
         <h4 class="mb-3">2/4. Ustaw narzut i dodatek do ceny końcowej</h4>
 
-        <div class="row col-sm-6">  
+        <div class="row col-sm-12">  
           <!-- tu wstawić tabelę from kontos-->
           <table class="table table-striped table-bordered" id="example2">
             <thead>
@@ -108,7 +108,7 @@
               </button>
 
               <button type="button" class="btn btn-warning" data-dismiss="modal">
-                <span class='glyphicon glyphicon-remove'></span> Close
+                <span class='glyphicon glyphicon-remove'></span> Zamknij
               </button>
             </div>
 
@@ -125,7 +125,7 @@
 <script type="text/javascript">
 
   $(document).on('click', '.edit-modal', function() {
-          $('#footer_action_button').text(" Update");
+          $('#footer_action_button').text(" Aktualizuj");
           $('#footer_action_button').addClass('glyphicon-check');
           $('#footer_action_button').removeClass('glyphicon-trash');
           $('.actionBtn').addClass('btn-success');
