@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Konto;
+use App\Kategorie;
 
 class WystawController extends Controller
 {
@@ -25,9 +25,10 @@ class WystawController extends Controller
     public function index()
     {
         $userId = \Auth::user()->id;
-        $konta = Konto::where('user_id',$userId)->get();
+        
+        $kategorie = Kategorie::where('user_id',$userId)->get();
 
-        return view('wystaw')->with('konta',$konta);
+        return view('wystaw')->with('kategorie',$kategorie);
     }
 
 

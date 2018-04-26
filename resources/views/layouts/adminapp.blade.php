@@ -109,6 +109,19 @@
                 </a>
               </li>
             </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Panel Administracyjny</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="{{route ('aktualizacja_kategorii')}}">
+                  <span data-feather="file-text"></span>
+                  Aktualizacja Kategorii
+                </a>
+              </li>
+            </ul>
 
           </div>
         </nav>

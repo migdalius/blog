@@ -63,6 +63,10 @@ Route::get('/wystaw_krok_4', 'Wystaw_krok_4Controller@index')->name('wystaw_krok
 
 Route::get('/rachunki', 'RachunkiController@index')->name('rachunki');
 
+Route::get('/aktualizacja_kategorii', 'Aktualizacja_kategoriiController@index')->name('aktualizacja_kategorii');
+Route::post('/aktualizacja_kategorii/update', 'Aktualizacja_kategoriiController@update');
+
+
 
 
 

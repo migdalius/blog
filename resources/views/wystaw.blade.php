@@ -1,11 +1,9 @@
 @extends('layouts.adminapp')
-@section ('table')
-  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="{{ asset('tabela/jquery.tabledit.js') }}"></script>
-@endsection
+
 
 @section('title', 'Wystaw aukcje')
+
+
 
 @section('content')
   @if (session('status'))
@@ -23,10 +21,11 @@
 
               <label for="exampleSelect1">Dostawca:</label>
               <select class="form-control" id="exampleSelect1">
-                <option>Czasnabuty</option>
-                <option>Kesi</option>
-                <option>Kupbuty</option>
-                <option>Sporti</option>
+                <option value="wszystkie"> Wszystkie </option>
+                <option value="czasnabuty"> Czasnabuty </option>
+                <option value="kesi"> Kesi </option>
+                <option vale="kupbuty"> Kupbuty </option>
+                <option value="sporti"> Sporti </option>
               </select>
 
             </div>
@@ -35,10 +34,11 @@
       </div>
       
       <div class="container col-md-12"> 
-        <table class="table table-striped table-bordered" id="example">
+        <table class="table table-striped table-bordered" id="example2">
           <thead>
             <tr>
               <th>ID</th>
+              <th>Dostawca</th>
               <th>Kategoria</th>
               <th>Tag1</th>
               <th>Tag2</th>
@@ -53,51 +53,36 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>test1</td>
-              <td>test2</td>
-              <td>test3</td>
-              <td>test4</td>
-              <td>test5</td>
-              <td>test6</td>
-              <td>test7</td>
-              <td>test8</td>
-              <td>test9</td>
-              <td>test10</td>
-              <td>test11</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>test1</td>
-              <td>test2</td>
-              <td>test3</td>
-              <td>test4</td>
-              <td>test5</td>
-              <td>test6</td>
-              <td>test7</td>
-              <td>test8</td>
-              <td>test9</td>
-              <td>test10</td>
-              <td>test11</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>test1</td>
-              <td>test2</td>
-              <td>test3</td>
-              <td>test4</td>
-              <td>test5</td>
-              <td>test6</td>
-              <td>test7</td>
-              <td>test8</td>
-              <td>test9</td>
-              <td>test10</td>
-              <td>test11</td>
-            </tr>
+            @foreach($kategorie as $kategoria)
+                <tr class="kategoria{{$kategoria->id}}">
+                  <td>{{$kategoria->id}}</td>
+                  <td>{{$kategoria->dostawca}}</td>
+                  <td>{{$kategoria->kategoria}}</td>
+                  <td>{{$kategoria->tag1}}</td>
+                  <td>{{$kategoria->tag2}}</td>
+                  <td>{{$kategoria->tag3}}</td>
+                  <td>{{$kategoria->tag4}}</td>
+                  <td>{{$kategoria->tag5}}</td>
+                  <td>{{$kategoria->tag6}}</td>
+                  <td>{{$kategoria->tag7}}</td>
+                  <td>{{$kategoria->tag8}}</td>
+                  <td>{{$kategoria->tag9}}</td>
+                  <td>{{$kategoria->tag10}}</td>
+                  <td>
+                    <button class="edit-modal btn btn-info" data-id="{{$kategoria->id}}" data-dostawca="{{$kategoria->dostawca}}"
+                      data-kategoria="{{$kategoria->kategoria}}" data-tag1 ="{{$kategoria->tag1}}" data-tag2 ="{{$kategoria->tag2}}" 
+                      data-tag3 ="{{$kategoria->tag3}}" data-tag4 ="{{$kategoria->tag4}}" data-tag5 ="{{$kategoria->tag5}}" 
+                      data-tag6 ="{{$kategoria->tag6}}" data-tag7 ="{{$kategoria->tag7}}" data-tag8 ="{{$kategoria->tag8}}" 
+                      data-tag9 ="{{$kategoria->tag9}}" data-tag10 ="{{$kategoria->tag10}}">
+                      <span class="glyphicon glyphicon-edit"></span> Edytuj
+                    </button>
+                  </td>
+                </tr>
+            @endforeach
           </tbody>
         </table>
       </div>
+
       <hr class="mb-4">
       <div class="float-right">
         <a class="btn btn-primary" href="{{route ('wystaw_krok_2')}}" role="button">Nastęny krok</a>
@@ -108,17 +93,8 @@
 @endsection
 
 
+
+
 @section ('tabela')
-  <script>
-  $('#example').Tabledit({
-          editButton: false,
-                  removeButton: false,
-                  columns: {
-                      identifier: [0, 'id'],
-                      editable: [[1, 'Kategoria'],[2, 'Tag1'],[3, 'Tag2'], [4, 'Tag3'], [5, 'Tag4'], [6, 'Tag5'], [7, 'Tag6'], 
-                      [8, 'Tag7'], [9, 'Tag8'], [10, 'Tag9'], [11, 'Tag10']]
-                  }
-              });
-        
-  </script>
+
 @endsection
