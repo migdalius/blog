@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products language="pol" currency="PLN">
+	<product id="17" vat="23.0" producer_code_standard="OTHER" code_on_card="8532">
+		<category id="1214553887" name="Sukienki"/>
+	</product>
+	<product id="39" vat="23.0" producer_code_standard="OTHER" code_on_card="8719">
+		<category id="1214553888" name="Bluzy"/>
+	</product>
+	<product id="41" vat="23.0" producer_code_standard="OTHER" code_on_card="60364">
+		<category id="1214553889" name="Spodnie"/>
+	</product>
+</products>

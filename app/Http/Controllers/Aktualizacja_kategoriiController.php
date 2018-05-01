@@ -31,10 +31,10 @@ class Aktualizacja_kategoriiController extends Controller
     {
         include(app_path() . '\Functions\xmlExtract.php');
         //zwracamy kategorie które są w danej xml
-        $kategorie = xmlExtractCategories(request('xml'), request('xml_tag'));
+        $kategorie_array = xmlExtractCategories(request('xml'), request('xml_tag'));
         //wgrywamy do bd
         //zwracamy view gdzie się wyświetlają dodane kategorie
-        return view('aktualizacja_kategorii')->with('recent_categories', $kategorie);
+        return view('aktualizacja_kategorii')->with('recent_categories', $kategorie_array);
     }
 
 }

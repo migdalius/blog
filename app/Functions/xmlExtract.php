@@ -1,12 +1,20 @@
 <?php
 
 function xmlExtractCategories($file_name, $category_tag){	
-	$xml = simplexml_load_file(asset($file_name));
-	$result = $xml->xpath($category_tag);
+	echo "entered function";
+	$xml = simplexml_load_file($file_name);
+	$category_array = array();
+	foreach($xml->xpath('//product/category[@name]') as $category_name){
+		echo $category_name.'<br/>';
+		if(!array_key_exists($category_name, $category_array)){
+			$category_array[$category_name]=1;
+			echo $category_name;
+		}
+	}
 	
-	return $result;
+	return $category_array;
 }
 
-//print_r(xmlExtractCategories('{{asset ('vendor/xml/czasnabuty.xml') }}, "category"));
+print_r(xmlExtractCategories('kesi.xml', 'category'));
 
 ?>
