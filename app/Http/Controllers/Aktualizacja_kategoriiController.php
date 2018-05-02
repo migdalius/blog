@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Kategorie;
 
 class Aktualizacja_kategoriiController extends Controller
 {
@@ -23,18 +24,32 @@ class Aktualizacja_kategoriiController extends Controller
      */
     public function index()
     {
-        return view('aktualizacja_kategorii');
+        $userId = \Auth::user()->id;
+        $kategorie = Kategorie::where('user_id',$userId)->pluck('kategoria');;
+        return view('aktualizacja_kategorii')->with('kategorie', $kategorie);
     }
 
 
-    public function update()
+    public function update(Request $req)
     {
-        include(app_path() . '\Functions\xmlExtract.php');
-        //zwracamy kategorie które są w danej xml
-        $kategorie_array = xmlExtractCategories(request('xml'), request('xml_tag'));
+        $data = new Kategorie;
+        $data->dostawca = 'czasna';
+        $data->kategoria = $req->kategoria;
+        $data->user_id = auth()->id();
+        $data->tag1 = '';
+        $data->tag2 = '';
+        $data->tag3 = '';
+        $data->tag4 = '';
+        $data->tag5 = '';
+        $data->tag6 = '';
+        $data->tag7 = '';
+        $data->tag8 = '';
+        $data->tag9 = '';
+        $data->tag10 = '';
+        $data->save();
         //wgrywamy do bd
         //zwracamy view gdzie się wyświetlają dodane kategorie
-        return view('aktualizacja_kategorii')->with('recent_categories', $kategorie_array);
+        return Response()->json($data);
     }
 
 }
