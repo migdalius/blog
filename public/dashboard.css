@@ -91,3 +91,38 @@ body {
 
 .border-top { border-top: 1px solid #e5e5e5; }
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+/*
+ * Buttons
+ */
+
+ .btn-lg{
+  font-size : 18px;
+ }
+
+
+ /*
+ * Forms
+ */
+ .form-control:focus{
+  border: 1px solid #3A5199 !important;
+  box-shadow: 0 0 3px #3A5199 !important;
+ }
+
+
+.dropdown-toggle:active, .dropdown-toggle:focus{
+  border: 1px solid #D5D6D2 !important;
+  box-shadow: 0 0 3px #D5D6D2 !important;
+}
+.dropdown-menu:hover{
+  border: 1px solid #D5D6D2 !important;
+  box-shadow: 0 0 3px #D5D6D2 !important;
+
+}
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active, .dropdown-item:active {
+  border: 1px solid #D5D6D2 !important;
+  box-shadow: 0 0 3px #D5D6D2 !important;
+}
+.dropdown-item:active{
+ background-color: transparent;
+}

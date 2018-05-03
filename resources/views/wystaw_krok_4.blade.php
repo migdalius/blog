@@ -19,13 +19,16 @@
     <form class="needs-validation" novalidate>
       <div class="row">
         <div class="col-md-4 mb-3">
-          <label for="exampleSelect1">Czas dostawy:</label>
-            <select class="form-control" id="exampleSelect1">
-              <option>Czasnabuty</option>
-              <option>Kesi</option>
-              <option>Kupbuty</option>
-              <option>Sporti</option>
-            </select>
+          <label for="exampleSelect1"></label>
+            <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle btn-block btn-lg" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wybierz czas dostawy</button>
+            <div class="dropdown-menu col-md-12">
+              <a class="dropdown-item"> 24 godziny </a>
+              <a class="dropdown-item"> 1 dzień </a>
+              <a class="dropdown-item"> 2 dni </a>
+              <a class="dropdown-item"> 4 dni </a>
+            </div>
+            </div>
         </div>
 
         <div class="col-md-4 mb-3">
@@ -49,27 +52,33 @@
 
       <div class="row">
         <div class="col-md-4 mb-3">
-          <label for="exampleSelect1">Dostawca</label>
-          <select class="form-control" id="exampleSelect1">
-            <option>Czasnabuty</option>
-            <option>Kesi</option>
-            <option>Kupbuty</option>
-            <option>Sporti</option>
-          </select>
+          <label for="exampleSelect1"></label>
+          <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle btn-block btn-lg" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wybierz dostawcę</button>
+          <div class="dropdown-menu col-md-12">
+            <a class="dropdown-item"> Czasnabuty </a>
+            <a class="dropdown-item">Kesi</a>
+            <a class="dropdown-item">Kupbuty</a>
+            <a class="dropdown-item">Sporti</a>
+          </div>
+        </div>
         </div>
         <div class="col-md-4 mb-3">
-          <label for="exampleSelect1">Wybierz konto allegro:</label>
-          <select class="form-control" id="exampleSelect1">
-            <option>Czasnabuty</option>
-            <option>Kesi</option>
-            <option>Kupbuty</option>
-            <option>Sporti</option>
-          </select>
+          <label for="exampleSelect1"></label>
+          <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle btn-block btn-lg" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wybierz konto allegro</button>
+          <div class="dropdown-menu col-md-12">
+            <a class="dropdown-item"> Winkels </a>
+            <a class="dropdown-item"> Netrelo </a>
+            <a class="dropdown-item"> Leukaspidai</a>
+            <a class="dropdown-item"> hippeis </a>
+          </div>
+        </div>
         </div>
 
         <div class="col-md-4 mb-3">
           <br>
-          <button class="btn btn-primary btn-lg btn-block" type="submit">Wystaw</button>
+          <button class="btn btn-dark btn-lg btn-block" type="submit">Wystaw</button>
         </div>
       </div>
     </div>    

@@ -16,7 +16,7 @@
      dupa
       <hr class="mb-4">
       <div class="float-right">
-        <a class="btn btn-primary" href="{{route ('wystaw_krok_4')}}" role="button">Nastęny krok</a>
+        <a class="btn btn-dark btn-lg" href="{{route ('wystaw_krok_4')}}" role="button">Nastęny krok</a>
       </div>
   </div>  
 

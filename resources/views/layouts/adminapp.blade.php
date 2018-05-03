@@ -43,7 +43,7 @@
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="{{ route('home') }}">
+                <a class="nav-link" href="{{ route('home') }}">
                   <span data-feather="home"></span>
                   Główny Panel <span class="sr-only">(current)</span>
                 </a>
@@ -79,12 +79,6 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('uzytkownicy') }}">
-                  <span data-feather="user-plus"></span>
-                  Użytkownicy
-                </a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="{{ route ('zamknietych') }}">
                   <span data-feather="layers"></span>
                   Archiwa (zamknięte)
@@ -115,6 +109,12 @@
               </a>
             </h6>
             <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('uzytkownicy') }}">
+                  <span data-feather="user-plus"></span>
+                  Użytkownicy
+                </a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{route ('aktualizacja_kategorii')}}">
                   <span data-feather="file-text"></span>

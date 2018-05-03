@@ -12,16 +12,25 @@
     <form>
 	    <div class="col-md-12 order-md-1" id="my-form">
 	      <div class="column">
-	        <div class="col-md-6 mb-3">
-	          <input type="text" class="form-control" id="xml_path" name="xml" placeholder="/xml/czasnabuty.xml" value="" required>
-	        </div>
+	        <div class="form-group">
+            <!--<label for="xml" class="col-md-4 control-label">Podaj ścieżkę do pliku xml</label>-->
+	          <div class="col-md-6">
+              <input type="text" class="form-control" id="xml_path" name="xml" placeholder="/xml/czasnabuty.xml" value="" required>
+	          </div>
+          </div>
 	        
-	        <div class="col-md-6 mb-3">
-	          <input type="text" class="form-control" id="xml_tag" name="xml_tag" placeholder="/iof:produts/iof:product/iof:category" value="" required>
-	        </div>
-  	      <div class="col-md-6 mb-3">
-  	        <button class="btn btn-dark btn-lg btn-block" type="button" id="myBtn" onclick="mySuperFunction()" style="font-size : 18px;" > Sprawdź które kategorie jeszcze nie są dodane </button>
-  	      </div>
+	        <div class="form-group">
+            <!--label for="xml_tag" class="col-md-4 control-label">Podaj category-path</label>-->
+	          <div class="col-md-6">
+              <input type="text" class="form-control" id="xml_tag" name="xml_tag" placeholder="/iof:produts/iof:product/iof:category" value="" required>
+	          </div>
+          </div>
+
+          <div class="form-group">
+    	      <div class="col-md-6 mb-3">
+    	        <button class="btn btn-dark btn-lg btn-block" type="button" id="myBtn" onclick="mySuperFunction()"> Sprawdź które kategorie jeszcze nie są dodane </button>
+    	      </div>
+          </div>
         </div>
 		  </div>
     </form>

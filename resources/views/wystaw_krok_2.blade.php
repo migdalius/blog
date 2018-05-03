@@ -16,7 +16,7 @@
 
         <div class="row col-sm-12">  
           <!-- tu wstawić tabelę from kontos-->
-          <table class="table table-striped table-bordered" id="example2">
+          <table class="table" id="example2">
             <thead>
               <tr>
                 <th>Konto</th>
@@ -33,7 +33,7 @@
                     <td>{{$konto->narzut}}</td>
                     <td>{{$konto->dodatek}}</td>
                     <td>
-                      <button class="edit-modal btn btn-info" data-id="{{$konto->id}}" data-login="{{$konto->login}}"
+                      <button class="edit-modal btn btn-light" data-id="{{$konto->id}}" data-login="{{$konto->login}}"
                         data-narzut="{{$konto->narzut}}" data-dodatek ="{{$konto->dodatek}}">
                         <span class="glyphicon glyphicon-edit"></span> Edytuj
                       </button>
@@ -51,8 +51,8 @@
       <div>
         <a clas ="error"> </a>
       </div>
-      <div class="float-center">
-        <a class="btn btn-primary" href="{{route ('wystaw_krok_3')}}" role="button">Nastęny krok</a>
+      <div class="float-right">
+        <a class="btn btn-dark btn-lg" href="{{route ('wystaw_krok_3')}}" role="button">Nastęny krok</a>
       </div>
     </div> 
 

@@ -27,7 +27,8 @@ class RegisterController extends Controller
      */
     public function index()
     {
-        return view('uzytkownicy');
+        $users = User::all();
+        return view('uzytkownicy')->with('users', $users);
     }
 
     use RegistersUsers;
