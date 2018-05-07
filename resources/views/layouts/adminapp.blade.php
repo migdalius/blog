@@ -116,6 +116,12 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="shopping-bag"></span>
+                  Dostawca Preview
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="{{route ('aktualizacja_kategorii')}}">
                   <span data-feather="file-text"></span>
                   Aktualizacja Kategorii

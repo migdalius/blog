@@ -22,6 +22,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/wystaw', 'WystawController@index')->name('wystaw');
 
+Route::post('/wystaw/editKategorie', 'WystawController@editKategorie');
+
 //1. zakładka /konta //
 Route::get('/konta', 'KontaController@index')->name('konta');
 
@@ -51,6 +53,8 @@ Route::get('/sklepy', 'SklepyController@index')->name('sklepy');
 Route::get('/szachownica', 'SzachownicaController@index')->name('szachownica');
 
 Route::get('/uzytkownicy', 'Auth\RegisterController@index')->name('uzytkownicy');
+
+//Route::get('/dostawca_preview', 'Auth\RegisterController@index')->name('uzytkownicy');
 
 
 Route::get('/wystaw_krok_2', 'Wystaw_krok_2Controller@index')->name('wystaw_krok_2');
