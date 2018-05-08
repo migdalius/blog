@@ -116,7 +116,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('dostawca_preview')}}">
                   <span data-feather="shopping-bag"></span>
                   Dostawca Preview
                 </a>
