@@ -7,7 +7,19 @@
             {{ session('status') }}
         </div>
     @endif
-    <form method="get" action="#">
-    	<button class="btn btn-dark btn-lg btn-block" type="submit"> Get allegro categories </button>
-    </form>
+
+    @if(isset($auth_uri))
+	    <form method="get" action="/allegro_fun/login">
+	    	{{csrf_field()}}
+	    	<button class="btn btn-dark btn-lg btn-block" type="submit"><a href="{{{$auth_uri}}}"> zaloguj do allegro </a> </button>
+	    </form>
+    @endif
+    @if (isset($result))
+    	<div class="container">
+    		@foreach($result as $key=>$value)
+    			<p> {{$key}}:{{$value}} </p>
+    		@endforeach
+    	</div>
+    @endif
+
 @endsection

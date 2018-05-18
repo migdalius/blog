@@ -75,3 +75,4 @@ Route::get('/aktualizacja_kategorii', 'Aktualizacja_kategoriiController@index')-
 Route::post('/aktualizacja_kategorii/update', 'Aktualizacja_kategoriiController@update');
 
 Route::get('/allegro_fun','AllegroFunController@index')->name('allegro_fun');
+Route::get('/allegro_fun/login', 'AllegroFunController@login')->name('allegro_fun_login');
