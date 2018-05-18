@@ -127,6 +127,12 @@
                   Aktualizacja Kategorii
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{route ('allegro_fun')}}">
+                  <span data-feather="shopping-cart"></span>
+                  Allegro fun
+                </a>
+              </li>
             </ul>
 
           </div>

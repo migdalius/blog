@@ -69,10 +69,9 @@ Route::get('/rachunki', 'RachunkiController@index')->name('rachunki');
 
 Route::get('/dostawca_preview', 'DostawcaPreviewController@index')->name('dostawca_preview');
 
+Route::post('/dostawca_preview/xmlLoadPreview', 'DostawcaPreviewController@load');
+
 Route::get('/aktualizacja_kategorii', 'Aktualizacja_kategoriiController@index')->name('aktualizacja_kategorii');
 Route::post('/aktualizacja_kategorii/update', 'Aktualizacja_kategoriiController@update');
 
-
-
-
-
+Route::get('/allegro_fun','AllegroFunController@index')->name('allegro_fun');

@@ -7,9 +7,44 @@
             {{ session('status') }}
         </div>
     @endif
-   	<div id='showProduct'></div><br>
-   	<input type="button" onclick="previous()" value="<<">
-	<input type="button" onclick="next()" value=">>">
+    <div class="container">
+    	<form action="/dostawca_preview/xmlLoadPreview" method="post">
+    		{{csrf_field()}}
+	    	<div class="row">
+	    		<div class="form-group col-sm-4">
+	    			<label for="xmlLink">Link do pliku xml:</label>
+			        <input type="text" class="form-control" id="xmlLink" name="xmlLink" placeholder="" value="" required>
+			        <div class="invalid-feedback">
+			            Nie udało się pobrać danego pliku
+			        </div>
+	    		</div>
+	    		
+	    		<div class="form-group col-sm-4">
+	    			<label for=""></label>
+	    			<button class="btn btn-dark btn-lg btn-block" type="submit"> Zobacz xml preview </button>
+	    		</div>
+	    	</div>
+	    </form>
+    	<div class="row">
+    		<div class="col-sm-12">
+    		</div>
+    	</div>
+
+    	<div class="row">
+    		<div class="col-sm-4">
+    		</div>
+    		<div class="col-sm-4">
+    		</div>
+    		<div class="col-sm-4">
+    		</div>
+    	</div>
+
+    	<div class="row">
+		   	<div id='showProduct'></div><br>
+		   	<input type="button" onclick="previous()" value="<<">
+			<input type="button" onclick="next()" value=">>">
+		</div>
+	</div>
 	
 @endsection
 
